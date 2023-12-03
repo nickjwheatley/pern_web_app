@@ -31,11 +31,11 @@ app.get('/api/all_games', async (req, res) => {
 
   // Define your /api/all_games POST endpoint
 app.post('/api/all_games', async (req, res) => {
-  const { name, description, type } = req.body;
+  const { name, description, team_size } = req.body;
 
   try {
     // Insert a new game into the "all_games" table
-    await knex('all_games').insert({ name, description, type });
+    await knex('all_games').insert({ name, description, team_size });
 
     res.json({ success: true });
   } catch (error) {

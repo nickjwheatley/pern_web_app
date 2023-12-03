@@ -1,6 +1,7 @@
 import logo from './rg.svg';
 // import logo from './rg_logo.jpg';
 import GameList from './gameList';
+import GetCurentGames from './SetCurrentGames';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     </div><div>
         {/* Other components */}
         <GameList />
+        <GetCurentGames />
       </div></>
   );
 }

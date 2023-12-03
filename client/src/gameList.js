@@ -6,8 +6,8 @@ const GameList = () => {
   const [games, setGames] = useState([]);
   const [newGameName, setNewGameName] = useState('');
   const [newGameDesc, setNewGameDesc] = useState('');
-  const [newGameType, setNewGameType] = useState('');
-  const [types, setTypes] = useState([]);
+  const [newGameTeamSize, setNewGameTeamSize] = useState('');
+  // const [types, setTypes] = useState([]);
 
   // useEffect(() => {
   //   // Fetch data from the Express server
@@ -42,7 +42,7 @@ const GameList = () => {
       await axios.post('http://localhost:5000/api/all_games', {
         name: newGameName,
         description: newGameDesc,
-        type: newGameType,
+        type: newGameTeamSize,
       });
 
       // Fetch updated data after adding a new game
@@ -51,7 +51,7 @@ const GameList = () => {
       // Clear form inputs
       setNewGameName('');
       setNewGameDesc('');
-      setNewGameType('');
+      setNewGameTeamSize('');
     } catch (error) {
       console.error('Error adding game:', error);
     }
@@ -70,7 +70,7 @@ const GameList = () => {
           <tr key={game.id}>
             <td>{game.name}</td>
             <td>{game.description}</td>
-            <td>{game.type}</td>
+            <td>{game.team_size}</td>
           </tr>))}
       </table>
       {/* <ul>
@@ -89,11 +89,11 @@ const GameList = () => {
         <input type="text" value={newGameDesc} onChange={(e) => setNewGameDesc(e.target.value)} />
       </div>
       <div>
-        <select value={newGameType} onChange={(e) => setNewGameType(e.target.value)}>
+        <select value={newGameTeamSize} onChange={(e) => setNewGameTeamSize(e.target.value)}>
           <option value="" disabled>Select a team size</option>
-          <option value='ind'>Individual</option>
-          <option value='pair'>Pairs</option>
-          <option value='half'>Half-and-Half</option>
+          <option value="1">Individual</option>
+          <option value='2'>Pairs</option>
+          <option value='0'>Half-and-Half</option>
           {/* {types.map((type) => (
             <option key={type} value={type}>{type}</option>
           ))} */}
