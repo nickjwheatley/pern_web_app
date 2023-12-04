@@ -68,7 +68,7 @@ const GameList = () => {
         </tr>
         {games.map((game) => (
           <tr key={game.id}>
-            <td>{game.name}</td>
+            <td>{game.game_name}</td>
             <td>{game.description}</td>
             <td>{game.team_size}</td>
           </tr>))}

@@ -1,29 +1,27 @@
-id,name,description,team_size,times_played,approved
-1,Badminton,,2,1,TRUE
-2,Basketball (Horse),,1,0,TRUE
-3,Basketball (Lightning),,1,1,TRUE
-4,Bocce ball,,2,0,TRUE
-5,Catchphrase (the game),,0,0,TRUE
-6,Charades,,0,0,TRUE
-7,Christmas carol pictionary,,0,0,TRUE
-8,Cornhole,,2,1,TRUE
-9,Fastest present wrapping,,1,0,TRUE
-10,Four square,,1,0,TRUE
-11,Horseshoes,,2,0,TRUE
-12,Just Dance Competition,,1,0,TRUE
-13,Kickball,,0,0,TRUE
-14,Kubb,,2,0,TRUE
-15,Living room mini golf,,1,0,TRUE
-16,Memory match,,1,0,TRUE
-17,Musical chairs,,1,0,TRUE
-18,Nerf target shooting,,2,1,TRUE
-19,Nerf war,,0,0,TRUE
-20,Paper Airplane Throwdown,,1,0,TRUE
-21,Planks,,1,1,TRUE
-22,Puzzle Speed Challenge,,2,2,TRUE
-23,Scattergories on paper (aka Guggenheim),,1,0,TRUE
-24,Three-legged race,,2,0,TRUE
-25,Toad Races,,2,0,TRUE
-26,Volleyball,,0,0,TRUE
-27,Wall Sit Competition,,1,1,TRUE
-28,Water Chug,,1,0,TRUE
+game_name,description,team_size,times_played,tournament_bracket_style,tie_breaker_eligible,approved
+Badminton (pairs),,2,1,TRUE,FALSE,TRUE
+Basketball (Horse),,1,0,FALSE,TRUE,TRUE
+Basketball (Lightning),,1,1,FALSE,FALSE,TRUE
+Bocce ball,,2,0,TRUE,TRUE,TRUE
+Catchphrase (the game),,5,0,FALSE,FALSE,TRUE
+Charades,,5,0,FALSE,FALSE,TRUE
+Christmas carol pictionary,,5,0,FALSE,FALSE,TRUE
+Cornhole,,2,1,TRUE,TRUE,TRUE
+Fastest present wrapping,,1,0,FALSE,TRUE,TRUE
+Four square,,1,0,FALSE,FALSE,TRUE
+Horseshoes,,2,0,TRUE,TRUE,TRUE
+Kubb,,2,0,TRUE,TRUE,TRUE
+Living room mini golf,,1,0,TRUE,TRUE,TRUE
+Memory match,,1,0,FALSE,TRUE,TRUE
+Musical chairs,,1,0,FALSE,FALSE,TRUE
+Nerf target shooting,,2,1,FALSE,TRUE,TRUE
+Nerf war,,5,0,FALSE,TRUE,TRUE
+Paper Airplane Throwdown,,1,0,FALSE,TRUE,TRUE
+Planks,,1,1,FALSE,TRUE,TRUE
+Puzzle Speed Challenge,,2,2,FALSE,TRUE,TRUE
+Scattergories on paper (aka Guggenheim),,1,0,FALSE,FALSE,TRUE
+Three-legged race,,2,0,TRUE,FALSE,TRUE
+Volleyball (pairs),,2,0,TRUE,FALSE,TRUE
+Volleyball (half-and-half),,5,0,FALSE,FALSE,TRUE
+Wall Sit Competition,,1,1,FALSE,TRUE,TRUE
+Water Chug,,1,0,FALSE,TRUE,TRUE

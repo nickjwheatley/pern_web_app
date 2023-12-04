@@ -24,8 +24,11 @@ function App() {
     </div><div>
         {/* Other components */}
         <GameList />
-        <GetCurentGames />
-      </div></>
+      </div>
+      <div>
+      {/* Your other components */}
+      <button onClick={GetCurentGames}>Query Database</button>
+    </div></>
   );
 }
 
