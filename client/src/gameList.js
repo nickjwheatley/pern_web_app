@@ -40,9 +40,9 @@ const GameList = () => {
     try {
       // Make a POST request to add a new game
       await axios.post('http://localhost:5000/api/all_games', {
-        name: newGameName,
+        game_name: newGameName,
         description: newGameDesc,
-        type: newGameTeamSize,
+        team_size: newGameTeamSize,
       });
 
       // Fetch updated data after adding a new game
